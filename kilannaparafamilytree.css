@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #eff6ff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #c1d1ff;
+  width: 100%;               /* Ensure full width */
+  padding: 40px;
+  display: flex;             /* Use flexbox */
+  justify-content: center;   /* Horizontally center the content */
+  align-items: center;       /* Vertically center if needed */
+  text-align: center;        /* Ensure text inside is centered */
+  flex-direction: column;    /* Stack elements vertically */
+  box-sizing: border-box;    /* Ensure padding doesn't affect the width */
+}
+
+.header-buttons {
+  padding-top: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.header button {
+  color: inherit;
+  text-decoration: width .2s ease;
+}
+
+.header button:after {
+  content: '';
+  position: relative;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width .3s ease;
+  -webkit-transition: width .3s ease;
+}
+
+.header button:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
+}
+
+.header h1 {
+  font-family: "Brush Script MT", "Lucida Handwriting", "Comic Sans MS", cursive;
+  font-size: 45px;
+}
+
+.header-buttons button {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+.commingsoon {
+  display: flex;               /* Enable flexbox layout */
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+  width: 100%;
+  height: 100vh;               /* Set the height to the full viewport height */
+  margin: 0;
+  padding: 0;
+  text-align: center;          /* Align text in the center */
+  box-sizing: border-box;      /* Ensure padding doesn't affect the size */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;   /* Allow vertical scrolling */
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* Hides the vertical scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+body {
+  -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer */
+  scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.footer {
+  background-color: #c1d1ff;
+  padding: 60px;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

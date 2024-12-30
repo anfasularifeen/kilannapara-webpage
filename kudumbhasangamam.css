@@ -1,0 +1,198 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #eff6ff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #c1d1ff;
+    width: 100%;               
+    padding: 40px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;        
+    flex-direction: column;    
+    box-sizing: border-box;    
+}
+
+.header-buttons {
+    padding-top: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.header button {
+    color: inherit;
+    text-decoration: width .2s ease;
+}
+
+.header button:after {
+    content: '';
+    position: relative;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width .3s ease;
+    -webkit-transition: width .3s ease;
+}
+
+.header button:hover:after {
+    width: 100%;
+    left: 0;
+    background: black;
+}
+
+.header h1 {
+    font-family: "Brush Script MT", "Lucida Handwriting", "Comic Sans MS", cursive;
+    font-size: 45px;
+}
+
+.header-buttons button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;   /* Allow vertical scrolling */
+}
+
+body::-webkit-scrollbar {
+    width: 0; /* Hides the vertical scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+body {
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.kudumbhasangamam-head h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* Display 4 images per row */
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.grid-item {
+    width: 100%; /* Full width of grid cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;  /* Crop images to fit */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Soft shadow for hover */
+}
+/* Existing CSS remains the same */
+
+/* Modal Styling */
+/* Modal Styling */
+/* Modal styling */
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;  /* Remove any default padding */
+}
+#myModal {
+    display: none;
+}
+
+
+/* Image inside the modal */
+.modal-content {
+    width: 1000px;      /* Fixed width of 1000px */
+    height: 667px;      /* Fixed height of 667px */
+    object-fit: contain;  /* Ensure the image fits inside the specified size without distortion */
+    display: block;
+    margin: auto;         /* Center the image within the modal */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Left and Right Arrow Styling */
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 36px;
+    color: #fff;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.arrow-right {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color: #bbb;
+}
+
+/* Footer */
+.footer {
+    background-color: #c1d1ff;
+    padding: 60px;
+    margin-top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
