@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainContent = document.querySelector("main");
 
   // Duration settings
-  const typewriterDuration = 6000; // 6 seconds for typing effect
+  const typewriterDuration = 1500; // 6 seconds for typing effect
   const resizeDuration = 1500; // 1.5 seconds for header resize
   const buttonDelay = 500; // 0.5 seconds after resizing to show buttons
 
