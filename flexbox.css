@@ -1,0 +1,11 @@
+.flexbox-container{
+    display: flex;
+}
+.flexbox{
+    width: 200px;
+    margin: 18px;
+    border: 3px solid#333;
+    background-color: blue;
+    color: orange;
+    size: xx-large;
+}

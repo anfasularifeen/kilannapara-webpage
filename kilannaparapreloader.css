@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling during animation */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #c1d1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Fullscreen initially */
+    width: 100%;
+    position: relative;
+    transition: height 1.5s ease-in-out; /* Smooth resizing */
+    overflow: hidden;
+    text-align: center; /* Ensures text is centered within the header */
+  }
+  
+  header.shrink {
+    height: 200px; /* Normal header height */
+    justify-content: center; /* Maintain vertical centering even after resizing */
+  }
+  
+  /* Smooth Writing Effect */
+  #header h1 {
+    font-family: "Brush Script MT", "Lucida Handwriting", "Comic Sans MS", cursive;
+    font-size: 45px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid white; /* Cursor effect */
+    width: 0; /* Initially hidden */
+    animation: typing 6s linear 1s forwards, blink 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Smoothly reveals the full text */
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: white;
+    }
+  }
+  
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    text-align: center;
+    display: none; /* Hidden initially */
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  /* Show Buttons */
+  header.shrink .buttons {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Show Main Content */
+  header.shrink + main {
+    display: block;
+    opacity: 1;
+  }
+  #header.header.shrink{
+    height: 191.8px;
+  }
+  body.allow-scroll {
+    overflow: auto; /* Enable scrolling */
+  }
+
+
