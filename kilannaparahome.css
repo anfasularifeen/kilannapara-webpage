@@ -391,6 +391,91 @@ h4{
     display: flex;
     justify-content: center;
 }
+@media (max-width: 768px) {
+    #header h1 {
+        font-size: 24px;
+        line-height: 1.2; /* Adjust line height for better spacing */
+        max-width: 100%; 
+        white-space: normal; /* Allow text wrapping */
+        word-wrap: break-word; /* Ensure long words break to fit the container */
+        word-break: break-word; /* Break words if necessary */
+        padding: 0 10px; /* Add padding to prevent clipping */
+        margin: 0; /* Ensure there's no unwanted margin */
+    }
+
+    #header {
+        padding: 20px; /* Ensure the header has space around its content */
+    }
+    
+}
+@media (max-width: 768px) {
+    /* Header - No extra padding or margin */
+    #header {
+        padding: 0;
+        margin: 0;
+        text-align: center; /* Ensure content is centered */
+    }
+
+    /* Center the logo and dark square together */
+    .kilannapara-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Center the content horizontally */
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 100%; /* Full width */
+        height: 100vh; /* Full height */
+    }
+
+    /* Hide the light blue square */
+    .kilannapara-intro-square-light {
+        display: none; /* Hide the light blue square */
+    }
+
+    /* Dark blue square */
+    .kilannapara-intro-square-dark {
+        position: relative;
+        width: 220px; /* Fixed size of the square */
+        height: 220px; /* Fixed size of the square */
+        background-color: #1e3a8a;
+        border-radius: 15px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; /* No margin */
+        padding: 0; /* No padding */
+    }
+
+    /* Logo image size */
+    .kilannapara-intro-logo {
+        width: 180px; /* Adjust the logo size */
+        height: 180px;
+    }
+
+    /* Adjust header text */
+    #header h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 0 10px;
+        margin: 0;
+        text-align: center; /* Ensure header text is centered */
+        max-width: 100%;
+    }
+
+    /* Adjust text container */
+    .kilannapara-intro-text {
+        max-width: 700px;
+        padding: 10px;
+        text-align: center;
+        margin: 0 10px; /* Keep consistent margin on left and right */
+    }
+}
 
 
   
