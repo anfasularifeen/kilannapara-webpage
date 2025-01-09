@@ -113,73 +113,23 @@ body {
     gap: 20px;               /* Space between text and logo */
 }
 
-/* Fixed size for the logo container */
-.kilannapara-intro-container {
-    position: relative;
-    width: 200px;            /* Fixed size for the logo container */
-    height: 200px;
-    margin: 50px auto;
-    margin-left: 50px;
-    padding-left: 10px;
-    flex-shrink: 0;
-    justify-content: left;       /* Prevent shrinking */
-}
 
-/* First square (light blue) */
-.kilannapara-intro-square-light {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #c1d1ff;
-    border-radius: 15px;
-    z-index: 1;
-}
-
-/* Second square (dark blue) */
-.kilannapara-intro-square-dark {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 100%;
-    height: 100%;
-    background-color: #1e3a8a;
-    border-radius: 15px;
-    z-index: 2;
+/*Kilannapara-intro*/
+.kilannapara-intro{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    padding-inline: 50px;
     align-items: center;
-    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
-/* Apply scaling on hover */
-.kilannapara-intro-square-dark:hover {
-    transform: scale(1.09); /* Scale up the element on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.kilannapara-intro-logo{
+    max-width: 200px;
+    max-height: 200px;
 }
-
-/* Logo image size */
-.kilannapara-intro-logo {
-    width: 180px;              /* Adjust size of the logo */
-    height: 180px;
-}
-
-/* Text container for intro */
-.kilannapara-intro-text {
-    max-width: 700px;          /* Limit the text's width */
-    padding: 10px;             /* Optional padding */
-    flex-shrink: 0;            /* Prevent shrinking */
-    margin-top: 30px;
-    margin-left: 40px;
-    justify-content: center;
-    padding-top: 30px;
-    margin-top: 20px;
-}
-
-/* Updated paragraph font */
-.kilannapara-intro-text p {
-    margin-top: 10px;
-    font-size: 16px; /* Font size updated */
-    font-family: 'Open Sans', sans-serif; /* Font family updated */
+@media(max-width:768px){
+    .kilannapara-intro{
+        flex-direction: column;
+    }
 }
 
 .footer {
@@ -222,11 +172,7 @@ body {
     font-size: 25px;
 }
 
-.kilannapara-intro {
-    justify-items: left;
-    justify-content: flex-start;
-    padding-right: 38.5%;
-}
+
 
 .home-upcomingevents-slider1 button,
 .home-gallery-slider2 button {
@@ -417,44 +363,7 @@ h4{
     }
 
     /* Center the logo and dark square together */
-    .kilannapara-intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; /* Center the content horizontally */
-        gap: 0;
-        padding: 0;
-        margin: 0;
-        position: relative;
-        width: 100%; /* Full width */
-        height: 100vh; /* Full height */
-    }
-
-    /* Hide the light blue square */
-    .kilannapara-intro-square-light {
-        display: none; /* Hide the light blue square */
-    }
-
-    /* Dark blue square */
-    .kilannapara-intro-square-dark {
-        position: relative;
-        width: 220px; /* Fixed size of the square */
-        height: 220px; /* Fixed size of the square */
-        background-color: #1e3a8a;
-        border-radius: 15px;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0; /* No margin */
-        padding: 0; /* No padding */
-    }
-
-    /* Logo image size */
-    .kilannapara-intro-logo {
-        width: 180px; /* Adjust the logo size */
-        height: 180px;
-    }
+    
 
     /* Adjust header text */
     #header h1 {
