@@ -208,3 +208,63 @@ body {
     -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer */
     scrollbar-width: none;  /* Hide scrollbar in Firefox */
 }
+@media screen and (max-width: 768px) {
+
+    /* Contents Section */
+    .contents {
+        margin: 10px;
+    }
+
+    .events {
+        margin: 10px 0;
+    }
+
+    .events h1 {
+        text-align: center; /* Center align headings */
+    }
+
+    /* Event Items */
+    .upcomingevent1,
+    .upcomingevent2,
+    .pastevent1,
+    .pastevent2,
+    .pastevent3,
+    .pastevent4 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center; /* Center align text */
+    }
+
+    img {
+        width: 90%; /* Scale images to fit within the container */
+        height: auto;
+    }
+
+    .text-uevent1,
+    .text-uevent2,
+    .text-pevent1,
+    .text-pevent2,
+    .text-pevent3,
+    .text-pevent4 {
+        margin: 10px 0; /* Add spacing between text and image */
+    }
+
+
+}
+
+/* Small Phones */
+@media screen and (max-width: 480px) {
+
+    .text-uevent1 p,
+    .text-uevent2 p,
+    .text-pevent1 p,
+    .text-pevent2 p,
+    .text-pevent3 p,
+    .text-pevent4 p {
+        font-size: 14px; /* Reduce font size for better readability */
+    }
+
+
+}
+
+
