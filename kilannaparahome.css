@@ -411,6 +411,11 @@ h4{
         margin: 0 10px; /* Keep consistent margin on left and right */
     }
 }
+fieldset{
+    border-radius: 8px;
+    border-color: #1e3a81;
+}
+
 
 
   
