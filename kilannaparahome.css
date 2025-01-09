@@ -126,11 +126,6 @@ body {
     max-width: 200px;
     max-height: 200px;
 }
-@media(max-width:800px){
-    .kilannapara-intro{
-        flex-direction: column;
-    }
-}
 /*Added*/
 .kilannapara-intro-text{
     max-width: 600px;
@@ -163,7 +158,6 @@ body {
 
 }
 /*end*/
-
 .footer {
     background-color: #c1d1ff;
     padding: 60px;
