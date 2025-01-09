@@ -126,11 +126,43 @@ body {
     max-width: 200px;
     max-height: 200px;
 }
-@media(max-width:768px){
+@media(max-width:800px){
     .kilannapara-intro{
         flex-direction: column;
     }
 }
+/*Added*/
+.kilannapara-intro-text{
+    max-width: 600px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.kilannapara-intro-square-dark{
+    background-color: #1e3a81;
+    border-radius: 8%;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+}
+.kilannapara-intro-square-dark:hover{
+    transform: scale(1.05);
+}
+
+
+@media(max-width:800px){
+    .kilannapara-intro{
+        flex-direction: column;
+        padding-top: 0px;
+        padding: 0px;
+        margin: 0;
+    }
+    .kilannapara-intro-text{
+        text-align: center;
+    }
+
+}
+/*end*/
 
 .footer {
     background-color: #c1d1ff;
@@ -337,7 +369,7 @@ h4{
     display: flex;
     justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #header h1 {
         font-size: 24px;
         line-height: 1.2; /* Adjust line height for better spacing */
@@ -354,7 +386,7 @@ h4{
     }
     
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     /* Header - No extra padding or margin */
     #header {
         padding: 0;
