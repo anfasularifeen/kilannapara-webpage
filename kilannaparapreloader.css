@@ -84,5 +84,8 @@ body {
   body.allow-scroll {
     overflow: auto; /* Enable scrolling */
   }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 
